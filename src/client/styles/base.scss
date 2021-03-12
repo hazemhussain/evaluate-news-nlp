@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1) ,url(../images/future.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+
+}
+
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+   
+}
+
+//section {
+    //max-width: 800px;
+    //margin: 50px auto;
+//}
+
+.form{
+   
+    display: flex;
+    justify-content: center;
+    form{
+        width: 80vw;
+        
+       
+    }
+   
+}
+
+.par{
+   
+    margin-top: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.api{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #FFBDA0;
+        #confidence,#subjectivity,#irony,#scoretag{
+        margin-top:15px
+    }
+}
