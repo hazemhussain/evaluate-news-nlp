@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <title>Test</title>
+      <!---- <link rel="stylesheet" href="/styles/resets.css">
+        <link rel="stylesheet" href="/styles/base.css">
+        <link rel="stylesheet" href="/styles/header.css">
+        <link rel="stylesheet" href="/styles/form.css">
+        <link rel="stylesheet" href="/styles/footer.css"> --->
+    <link href="main.css" rel="stylesheet"></head>
+
+    <body>
+
+        <header>
+            
+            <div class="logo"> 
+                <div class="bg"></div>   
+            </div>
+          
+            <div class="navigation">
+                navigation
+            </div>
+        </header>
+
+        <main>
+            <section class="form">
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" placeholder="Name">
+                    <input class="submit" type="submit" name="" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            </section>
+
+            <section class="par">
+                <strong>Form Results:</strong>
+                <div class="api">
+                <div id="results"></div>
+                <div id="agreement"></div>
+                <div id="confidence"></div>
+                <div id="subjectivity"></div>
+                <div id="irony"></div>
+                <div id="scoretag"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy Udacity FWD</p>
+        </footer>
+
+    <script type="text/javascript" src="main.js"></script></body>
+</html>
