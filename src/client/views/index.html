@@ -40,7 +40,7 @@
                 <div id="confidence"></div>
                 <div id="subjectivity"></div>
                 <div id="irony"></div>
-                <div id="scoretag"></div>
+                <div id="score_tag"></div>
                 </div>
             </section>
         </main>
@@ -48,6 +48,14 @@
         <footer>
             <p>&copy Udacity FWD</p>
         </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
 
     </body>
 </html>

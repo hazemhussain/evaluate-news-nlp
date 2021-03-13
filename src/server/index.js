@@ -28,10 +28,6 @@ app.get('/', function (req, res) {
 
 const PORT = process.env.PORT || 8081;
 
-// designates what port the app will listen to for incoming requests
-app.listen(PORT, function () {
-    console.log('Example app listening on port 8081!'.america)
-})
 
 app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
@@ -76,7 +72,15 @@ app.post('/sentiment', async(req, res) => {
             sentimented_concept_list: data.sentimented_concept_list
         }
         res.send(responseData)
+        console.log(data)
     } catch (error) {
         console.log(`error ${error}`)
     }
 })
+
+// designates what port the app will listen to for incoming requests
+app.listen(PORT, function () {
+    console.log('Example app listening on port 8081!'.america)
+})
+
+module.exports = app;
